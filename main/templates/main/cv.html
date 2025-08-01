@@ -1,0 +1,49 @@
+{% extends 'main/base.html' %}
+{% load static %}
+
+{% block title %}
+Read & learn about the CV
+{% endblock %}
+
+{% block content %}
+<div style="margin-left:0.5%">
+<h2>My CV & Portfolio</h2>
+<div>Yesbergen Yerasyl</div>
+<div>Email: eraqwerty11@gmail.com</div>
+<div>Education: Nis Chemistry and Biology Almaty</div>
+<div>Graduation Year: 2027</div>
+<div>Grade Point Average (GPA): 5.0</div>
+<br>
+<p class="par-title">My projects:</p>
+<p class="par-specific">1.”Cognitive” mobile application. Tool that can be used to improve focus, reduce screen time and to deal with the stress of the eyes. Developed on Flutter framework.</p>
+<p class="par-specific">2.”MIP Vision” (Medical Image Processing Vision) project. AI model that uses Convolutional Neural Network system to classify medical images of brain tumor. Completed the task with 96% accuracy on test data. Developed on Python, Tensorflow, Keras, Matplotlib. </p>
+<p class="par-specific">3.InclusiTech site. Site that was developed in order to help children and people with rare diseases to study. Site has relatable tools for children with ADHD and autism. Developed on Python and Django.</p>
+<p class="par-specific">4.”SmartScout” robot. Robot that was designed and programmed after earthquakes in Almaty. Robot can be controlled by a human using laptop or automatically. Robot writes its own location and location of people that are stuck under ruins. Robot can also give these people first medical aid kit.</p>
+<p class="par-title">Work Experience/Achievements:</p>
+<p class="par-specific">1.World Robot Olympiad 2024 Senior Future Innovators Republican Stage 3rd place – One of the most famous competitions in the world that stimulates children and teenagers in the age of 10-17 to work on their projects and innovate robotics. International stage is organized in different country every year.</p>
+<p class="par-specific">2.”Teens in AI Hackaton”, 1st place on regional stage. – Hackaton that was organized in Almaty in 2024. After regional stage international stage was organized.</p>
+
+<p class="par-title">Extracurricular activities:</p>
+
+<p class="par-specific">1.Youtube channel with 5000 subscribers. “Year Yesber” is a channel that helos me to develop my personal brand and help people.</p>
+
+<p class="par-specific">2.Freelance. In the summer of 2024, I worked on freelance as a designer. Worked for 2 companies and personal client.</p>
+
+<p class="par-specific">3.Participation in school band. Played guitar for more than 2 years and participated at school events such as autumn ball 2022 and winter ball 2022 as a rhythm guitar player.</p>
+
+<p class="par-title">Skills:</p>
+
+<p class="par-specific">1.Ability to work with machine learning libraries in the Python programming language - TensorFlow, Matplotlib, numpy.
+</p>
+<p class="par-specific">2.Ability to work with the framework for creating websites and web applications Django in the Python programming language.</p>
+<p class="par-specific">3.Experience working with mobile applications using the Dart programming language and the Flutter framework.</p>
+<p class="par-specific">4.Ability to work with lightweight low-code designers: Flutterflow and Dart.</p>
+<p class="par-specific">5.Ability to work in graphic design: Figma, Photoshop.</p>
+
+<a href="{% url 'download_file' 'yyycvcv.pdf' %}">
+    <button class="btn btn-primary" style="margin:0.5%">Download PDF</button>
+</a>
+
+</div>
+
+{% endblock %}
