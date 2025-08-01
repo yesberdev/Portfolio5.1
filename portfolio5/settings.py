@@ -25,8 +25,7 @@ SECRET_KEY = "django-insecure-3z$0@&*jku4x8t)_b!#d26!e5a941@r98qwihx1b812fib@&pp
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
-
+ALLOWED_HOSTS = ['portfolio-yesber.onrender.com']
 
 # Application definition
 
@@ -48,6 +47,7 @@ MIDDLEWARE = [
     "django.contrib.auth.middleware.AuthenticationMiddleware",
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
+    'whitenoise.middleware.WhiteNoiseMiddleware',
 ]
 
 ROOT_URLCONF = "portfolio5.urls"
@@ -119,9 +119,9 @@ STATIC_URL = "static/"
 
 
 
-STATICFILES_DIRS = [
-     BASE_DIR / "static",
-]
+# STATICFILES_DIRS = [
+#      BASE_DIR / "static",
+# ]
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
 
